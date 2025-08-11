@@ -18,7 +18,7 @@
 
 body {
     margin: 0;
-    font-size: 13px;
+    font-size: 15px;
     font-family: 'Barlow Semi Condensed';
 }
 
@@ -67,6 +67,10 @@ section .bio div h3, p {
 /* Colored blocks */
 
 /* Purple */
+.content img {
+    display: none;
+}
+
 .purple {
     background-color: var(--Purple-500);
     color: var(--Purple-50);
@@ -125,6 +129,12 @@ section .bio div h3, p {
         gap: 2.5%;
         row-gap: 5%;
         margin: 10%;
+    }
+    .content img {
+        display: block;
+        margin-left: auto;
+        margin-top: -75px;
+        margin-bottom: -35px;
     }
     section {
         margin: 0;

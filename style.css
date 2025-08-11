@@ -30,9 +30,8 @@ h2, h3 {
 
 main {
     display: grid;
-    grid-template-columns: 1;
     margin: 20% 10%;
-    filter: drop-shadow(40px 10px 30px #c5c5c5);
+    filter: drop-shadow(50px 50px 25px #c5c5c5);
 }
 
 section {
@@ -117,4 +116,37 @@ section .bio div h3, p {
 
 .grey p {
     color: var(--Grey-100);
+}
+
+@media (min-width: 700px) {
+    main {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2.5%;
+        row-gap: 5%;
+        margin: 10%;
+    }
+    section {
+        margin: 0;
+    }
+    .purple {
+        grid-column: 1 / span 2; 
+        grid-row: 1; 
+    }
+    .grey {
+        grid-column: 3; 
+        grid-row: 1;
+    }
+    .second {
+        grid-column: 4; 
+        grid-row: 1 / span 2; 
+    }
+    .first {
+        grid-column: 1; 
+        grid-row: 2; 
+    }
+    .dark-blue {
+        grid-column: 2 / span 2; 
+        grid-row: 2; 
+    }
 }
